@@ -1,0 +1,72 @@
+/movie-marathon-3
+├── /app
+│   ├── /about
+│   │   └── page.js                  // About page ("/about")
+│   ├── /contact
+│   │   └── page.js                  // Contact page ("/contact")
+│   ├── /faq
+│   │   └── page.js                  // FAQ page ("/faq")
+│   ├── /privacy-policy
+│   │   └── page.js                  // Privacy Policy page ("/privacy-policy")
+│   ├── /terms-and-conditions
+│   │   └── page.js                  // Terms and Conditions page ("/terms-and-conditions")
+│   ├── /movies
+│   │   ├── page.js                  // Movies overview page ("/movies")
+│   │   └── /[id]
+│   │       └── page.js              // Movie details page ("/movies/:id")
+│   ├── /tv
+│   │   ├── page.js                  // TV shows overview page ("/tv")
+│   │   └── /[id]
+│   │       └── page.js              // TV show details page ("/tv/:id")
+│   ├── /people
+│   │   ├── page.js                  // People overview page ("/people")
+│   │   └── /[id]
+│   │       └── page.js              // Person details page ("/people/:id")
+│   ├── /seo
+│   │   ├── sitemap.xml              // Sitemap file
+│   │   ├── robots.txt               // Robots.txt file
+│   │   └── SearchBar.js             // Search bar component
+│   ├── layout.js                    // Root layout with Redux Provider and Page Provider
+│   ├── page.js                      // Home page ("/")
+│   └── globals.css                  // Global styles
+├── /components                       // Reusable components
+│   ├── Navbar.js                    // Navigation bar component
+│   ├── Footer.js                    // Footer component
+│   ├── Modal.tsx                    // Modal component
+│   └── SEO.js                       // SEO component
+├── /hooks                            // Custom hooks
+│   ├── useFetch.js                  // Example custom hook for fetching data
+│   ├── useTheme.js                  // Example custom hook for theme management
+│   └── ...                          // Other hooks
+├── /providers                        // Context providers
+│   ├── ThemeProvider.js             // Theme context provider
+│   ├── AuthProvider.js              // Authentication context provider (if needed)
+│   ├── PageProvider.tsx             // Context provider for managing page state
+│   └── ...                          // Other providers
+├── /redux                            // Redux state management
+│   ├── store.js                     // Redux store configuration
+│   ├── themeSlice.js                // Redux slice for theme management
+│   ├── movieSlice.js                // Redux slice for movie data
+│   ├── tvSlice.js                   // Redux slice for TV data
+│   ├── personSlice.js               // Redux slice for person data
+├── /services                         // API service functions
+│   ├── /tmdb
+│   │   └── tmdb.js                  // TMDB API service functions
+│   ├── /omdb
+│   │   └── omdb.js                  // OMDB API service functions
+│   ├── /googleMaps
+│   │   └── googleMaps.js            // Google Maps API service functions
+│   ├── /googleAnalytics
+│   │   └── googleAnalytics.js        // Google Analytics service functions
+├── /public                           // Static assets
+│   ├── favicon.ico                   // Favicon file
+│   ├── logo.png                      // Logo image
+│   ├── /images                       // Directory for other images
+│   │   ├── example1.jpg
+│   │   └── example2.png
+│   ├── /sounds                       // Directory for sound effects
+│   │   ├── click.mp3
+│   │   └── notification.wav
+├── .env.local                        // Local environment variables (API keys, etc.)
+├── package.json                      // Project dependencies and scripts
+└── README.md                         // Project documentation
