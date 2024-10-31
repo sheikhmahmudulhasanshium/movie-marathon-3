@@ -29,9 +29,9 @@ const CustomBreadCrumb = ({ params: { link, name } }: CustomLink) => {
     return (
         <div className="left-4 sm:left-4 md:left-6 lg:left-16 top-28  w-full fixed z-10 ">
             <Breadcrumb>
-                <BreadcrumbList className="text-lg">
+                <BreadcrumbList className="text-lg ">
                     {breadcrumbItems.map((item, index) => (
-                        <div key={index} className="inline-flex items-center">
+                        <div key={index} className="inline-flex items-center shadow">
                             <BreadcrumbItem>
                                 <a href={item.href} className="text-blue-500 hover:underline">
                                     {item.label}
