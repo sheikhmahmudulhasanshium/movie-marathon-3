@@ -1,9 +1,11 @@
+
 const Footer = () => {
-    return ( 
-        <div>
+    return (
+        <footer className="bg-accent flex justify-center items-center w-full py-4 min-h-20vh">
+
             Footer
-        </div>
-     );
-}
- 
+        </footer>
+    );
+};
+
 export default Footer;
