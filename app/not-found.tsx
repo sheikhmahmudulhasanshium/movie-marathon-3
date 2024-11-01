@@ -8,6 +8,8 @@ import Header from './components/header';
 import Footer from './components/footer';
 import CustomBreadCrumb from './components/custom-bread-crumb';
 import BasicPageProvider from './providers/basic-page-provider';
+import Image from 'next/image';
+import NotFoundImage from '../public/Designer.jpeg'
 
 const NotFound: React.FC = () => {
     const router = useRouter();
@@ -24,7 +26,8 @@ const NotFound: React.FC = () => {
                     <CustomBreadCrumb params={{ link: "/not-found", name: "/404 (Page Not Found) !!!" }} />
                     
                     {/**Body */}
-                    <div className="flex flex-col items-center justify-center w-full relative z-0 my-12 min-h-screen"> 
+                    <div className="flex flex-col items-center justify-center w-full relative z-0 my-12 min-h-screen">
+                        <Image src={NotFoundImage} alt=''/> 
                         <h2 className="mt-4 text-2xl">Oops! Page Not Found</h2>
                         <p className="mt-2">The page you are looking for does not exist.</p>
                         <div className="flex justify-center w-full gap-6 mt-8">

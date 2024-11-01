@@ -15,7 +15,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang="en" suppressContentEditableWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-2.ico" type="image/x-icon"/>
         <title>{params.title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"></meta>
 

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ArrowBigUpIcon } from "lucide-react";
 import Image from "next/image";
-import Logo from "../public/logo-full.png";
+import Logo from "../../public/logo-full.png";
 import Link from "next/link";
 
 const Footer = () => {
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                     <Separator orientation="vertical" className="border opacity-30 min-h-40 h-60 max-h-full mx-1 flex w-1" />
                     <h6 className="flex w-6/12 text-sm text-accent justify-start text-justify">
-                        Stream Your Favorite Movies and TV Shows: Chill, Binge, and Discover Top-Rated Content with Movie Marathon 3.0!
+                    Movie Marathon is the ultimate app for movie enthusiasts who love to binge-watch their favorite films and TV shows. Whether you&apos;re planning a cozy night in or an epic weekend of non-stop entertainment, Movie Marathon helps you organize and enhance your viewing experience. With a vast library of movies and TV series across various genres, personalized recommendations, and seamless streaming options, you can easily discover new favorites and revisit classics.
                     </h6>
                 </div>
             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                     <Link href="mailto:officials.shium@gmail.com">Contact</Link>
                 </div>
             </nav>
-            <div className="flex flex-col justify-center items-center my-6">
+            <div className="flex flex-col justify-center items-center my-0">
                 {isVisible && (
                     <Button 
                         onClick={scrollToTop} 

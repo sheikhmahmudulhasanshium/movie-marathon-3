@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '../public/logo-3.png';
+import Logo from '../../public/logo-3.png';
 
 const Header = () => {
     return ( 
