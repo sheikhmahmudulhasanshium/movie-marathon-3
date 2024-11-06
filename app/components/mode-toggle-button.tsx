@@ -1,19 +1,13 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
-import { useTheme } from "next-themes"
-
-import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-
+import * as React from "react";
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { useDispatch } from "react-redux";
+import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { setLight, setDark, setSystem } from "../redux/themeSlice"; 
 export function ModeToggle() {
-  const { setTheme } = useTheme()
+  const dispatch = useDispatch();
 
   return (
     <DropdownMenu>
@@ -25,16 +19,10 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => dispatch(setLight())}>Light</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => dispatch(setDark())}>Dark</DropdownMenuItem>
+        <DropdownMenuItem onClick={() => dispatch(setSystem())}>System</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

@@ -1,5 +1,4 @@
 import "./globals.css";
-import { ThemeProvider } from "./providers/theme-provider";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -30,9 +29,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
       </head>
 
       <body className="flex justify-center items-center min-w-screen max-w-full w-full z-0">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
-        </ThemeProvider>
       </body>
     </html>
   );
