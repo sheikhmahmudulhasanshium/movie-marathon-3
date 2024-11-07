@@ -32,11 +32,13 @@
 ├── /components                           // Reusable components
 │   ├── Navbar.js                        // Navbar component for large screens
 │   ├── Footer.js                        // Footer component
-│   ├── Modal.tsx                        // Modal component
 │   ├── SEO.js                           // SEO component
 │   ├── ui                               // UI components
 │   │   ├── button.js                    // Button component
 │   │   ├── dropdown-menu.js             // Dropdown menu component
+├── /modals                               // Modal components
+│   ├── BodyModal.tsx                    // Body Modal component
+│   ├── Modal.tsx                        // Generic Modal component
 ├── /hooks                                // Custom hooks
 │   ├── useFetch.js                      // Custom hook for fetching data
 │   ├── useTheme.js                      // Custom hook for theme management

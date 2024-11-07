@@ -6,9 +6,9 @@ import RootLayout from '@/app/layout';
 import BasicPageProvider from '@/app/providers/basic-page-provider';
 import BodyProvider from '@/app/providers/body-provider';
 import React from 'react';
-import SubMenubar from '../../components/submenubar';
+import SubMenubar from '../../../components/submenubar';
 import { movieMenu } from "@/lib/data";
-import MovieContent from './content';
+import MovieContent from '../content';
 
 const Movie: React.FC = () => {
     return (
@@ -19,12 +19,12 @@ const Movie: React.FC = () => {
             }}
         >
             <BasicPageProvider header={<Header />} footer={<Footer />}>
-                <CustomBreadCrumb params={{ link: "/movie", name: "/Movies/" }} />
+                <CustomBreadCrumb params={{ link: "/movie/", name: "/Movie/" }} />
 
                 {/* Passing the movieMenu as the `options` prop */}
                 <BodyProvider
                     navbar={<SubMenubar options={movieMenu} />} 
-                    title="Explore Movies from here" 
+                    title="Explore Popular Movies from here" 
                     content={<MovieContent/>} 
                     additionalContent={<div>Additional movie-related information can go here.</div>} 
                 />

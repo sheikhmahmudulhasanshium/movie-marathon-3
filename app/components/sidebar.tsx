@@ -7,6 +7,7 @@ import { RootState } from '../redux/store';
 import { setActiveMenu } from '../redux/activeMenuSlice'; // Import setActiveMenu action
 import Link from 'next/link';
 import { MenuOption } from '@/types';
+import { ModeToggle } from './mode-toggle-button';
 
 const Sidebar: React.FC = () => {
     const dispatch = useDispatch();
@@ -52,6 +53,8 @@ const Sidebar: React.FC = () => {
                             </span>
                         </Link>
                     </DropdownMenuItem>
+                    <DropdownMenuSeparator />
+                    <div className='flex justify-center'><ModeToggle /></div>
                 </DropdownMenuContent>
             </DropdownMenu>
         </div>

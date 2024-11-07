@@ -27,7 +27,7 @@ const CustomBreadCrumb = ({ params: { link, name } }: CustomLink) => {
     });
 
     return (
-        <div className="left-4 sm:left-4 md:left-6 lg:left-16 top-28  w-full fixed z-10 ">
+        <div className="left-4 sm:left-4 md:left-6 lg:left-16 top-36  w-full fixed z-10 ">
             <Breadcrumb>
                 <BreadcrumbList className="text-lg ">
                     {breadcrumbItems.map((item, index) => (

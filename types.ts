@@ -4,3 +4,9 @@ export interface MenuOption { // Export the interface
     path: string;
     icon?: JSX.Element; 
 }
+export interface SubMenuOption{
+    name: string;
+    path: string;
+    icon?: JSX.Element; 
+
+}
