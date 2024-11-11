@@ -1,4 +1,5 @@
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -26,6 +27,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(params.data) }}
           />
         )}
+        <GoogleAnalytics gaId="G-JRX3W9MPK0" />
       </head>
 
       <body className="flex justify-center items-center min-w-screen max-w-full w-full z-0">
