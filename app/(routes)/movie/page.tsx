@@ -19,7 +19,7 @@ const Movie: React.FC = () => {
             }}
         >
             <BasicPageProvider header={<Header />} footer={<Footer />}>
-                <CustomBreadCrumb params={{ link: "/movie", name: "/Movies/" }} />
+                <CustomBreadCrumb params={{ link: "/movie/", name: "/Movies/" }} />
 
                 {/* Passing the movieMenu as the `options` prop */}
                 <BodyProvider

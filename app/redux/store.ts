@@ -1,12 +1,11 @@
+
 import { configureStore } from '@reduxjs/toolkit';
-import activeMenuReducer from './activeMenuSlice';
+import activeMenuReducer from './activeMenuSlice'; // Assuming these exist
 import sidebarMenuReducer from './sidebarMenuSlice';
 import navbarMenuReducer from './navbarMenuSlice';
 import themeReducer from './themeSlice';
-//import movieReducer from './movieSlice';
-//import tvReducer from './tvSlice';
-//import personReducer from './personSlice';
-import menuReducer from './menuSlice'; // Import the menu reducer
+import menuReducer from './menuSlice';
+import movieReducer from './movieSlice'; // Assuming this exists
 
 const store = configureStore({
   reducer: {
@@ -14,12 +13,13 @@ const store = configureStore({
     sidebarMenu: sidebarMenuReducer,
     navbarMenu: navbarMenuReducer,
     theme: themeReducer,
-    //movie: movieReducer,
-    //tv: tvReducer,
-    //person: personReducer,
-    menu: menuReducer, // Add the menu reducer here
+    menu: menuReducer,
+    movie: movieReducer, 
+      //tv: tvReducer,
+      //person: personReducer,
   },
 });
+export type AppDispatch = typeof store.dispatch;
 
 export type RootState = ReturnType<typeof store.getState>;
 export default store;
